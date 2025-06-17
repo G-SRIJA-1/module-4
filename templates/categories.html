@@ -1,1 +1,6 @@
-
+<h2>Menu Categories</h2>
+<ul>
+  <li ng-repeat="category in catCtrl.categories">
+    <a ui-sref="items({ categoryId: category.id })">{{ category.name }}</a>
+  </li>
+</ul>
